@@ -17,8 +17,8 @@ An app to cast your emotions as an emoji!. This app is build using Google's Mobi
 
 # Screenshots
 
-<img src="https://github.com/abhinav78910/Emojify/blob/master/screenshots/ss1.jpeg?raw=true" width="210">|
-<img src="https://github.com/abhinav78910/Emojify/blob/master/screenshots/ss2.jpeg?raw=true" width="210">|
+<img src="https://github.com/abhinav78910/Emojify/blob/master/screenshots/ss1.png?raw=true" width="250">|
+<img src="https://github.com/abhinav78910/Emojify/blob/master/screenshots/ss2.png?raw=true" width="250">|
 
 ## Found this project useful? 
 
