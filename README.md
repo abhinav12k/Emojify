@@ -1,11 +1,14 @@
 # Emojify
 An app to cast your emotions as an emoji!. This app is build using Google's Mobile vision library.
 
+## Test it on your device! [Download apk](https://github.com/abhinav78910/Emojify/raw/master/app-release.apk)
+
 # Getting Started
-* In android studio goto file
+* Fork the repo
+* Now in android studio goto file
 * Select new > Import from version control
 * Choose git / github (git option recommanded )
-* Paste url to repository i.e https://github.com/abhinav78910/Emojify.git
+* Paste url to repository i.e https://github.com/{your github userid}/Emojify.git 
 * Click on clone.
 
 # Working
@@ -17,8 +20,8 @@ An app to cast your emotions as an emoji!. This app is build using Google's Mobi
 
 # Screenshots
 
-<img src="https://github.com/abhinav78910/Emojify/blob/master/screenshots/ss1.jpeg?raw=true" width="210">|
-<img src="https://github.com/abhinav78910/Emojify/blob/master/screenshots/ss2.jpeg?raw=true" width="210">|
+<img src="https://github.com/abhinav78910/Emojify/blob/master/screenshots/ss1.png?raw=true" width="250">|
+<img src="https://github.com/abhinav78910/Emojify/blob/master/screenshots/ss2.png?raw=true" width="250">|
 
 ## Found this project useful? 
 
