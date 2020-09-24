@@ -42,10 +42,6 @@ class BitmapUtils {
 
     /**
      * Resamples the captured photo to fit the screen for better memory usage.
-     *
-     * @param context   The application context.
-     * @param imagePath The path of the photo to be resampled.
-     * @return The resampled bitmap
      */
     static Bitmap resamplePic(Context context, String imagePath) {
 
@@ -74,12 +70,6 @@ class BitmapUtils {
         return BitmapFactory.decodeFile(imagePath);
     }
 
-    /**
-     * Creates the temporary image file in the cache directory.
-     *
-     * @return The temporary image file.
-     * @throws IOException Thrown if there is an error creating the file
-     */
     static File createTempImageFile(Context context) throws IOException {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss",
                 Locale.getDefault()).format(new Date());
@@ -93,12 +83,6 @@ class BitmapUtils {
         );
     }
 
-    /**
-     * Deletes image file for a given path.
-     *
-     * @param context   The application context.
-     * @param imagePath The path of the photo to be deleted.
-     */
     static boolean deleteImageFile(Context context, String imagePath) {
         // Get the file
         File imageFile = new File(imagePath);
@@ -116,10 +100,8 @@ class BitmapUtils {
     }
 
     /**
-     * Helper method for adding the photo to the system photo gallery so it can be accessed
+     * For adding the photo to the system photo gallery so it can be accessed
      * from other apps.
-     *
-     * @param imagePath The path of the saved image
      */
     private static void galleryAddPic(Context context, String imagePath) {
         Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
@@ -129,14 +111,6 @@ class BitmapUtils {
         context.sendBroadcast(mediaScanIntent);
     }
 
-
-    /**
-     * Helper method for saving the image.
-     *
-     * @param context The application context.
-     * @param image   The image to be saved.
-     * @return The path of the saved image.
-     */
     static String saveImage(Context context, Bitmap image) {
 
         String savedImagePath = null;
@@ -176,12 +150,6 @@ class BitmapUtils {
         return savedImagePath;
     }
 
-    /**
-     * Helper method for sharing an image.
-     *
-     * @param context   The image context.
-     * @param imagePath The path of the image to be shared.
-     */
     static void shareImage(Context context, String imagePath) {
         // Create the share intent and start the share activity
         File imageFile = new File(imagePath);

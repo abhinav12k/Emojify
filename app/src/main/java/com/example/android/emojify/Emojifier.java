@@ -39,9 +39,6 @@ class Emojifier {
     /**
      * Method for detecting faces in a bitmap, and drawing emoji depending on the facial
      * expression.
-     *
-     * @param context The application context.
-     * @param picture The picture in which to detect the faces.
      */
     static Bitmap detectFacesandOverlayEmoji(Context context, Bitmap picture) {
 
@@ -125,10 +122,7 @@ class Emojifier {
 
 
     /**
-     * Determines the closest emoji to the expression on the face, based on the
-     * odds that the person is smiling and has each eye open.
-     *
-     * @param face The face for which you pick an emoji.
+     * Determines the closest emoji to the expression on the face
      */
 
     private static Emoji whichEmoji(Face face) {
@@ -179,12 +173,8 @@ class Emojifier {
 
     /**
      * Combines the original picture with the emoji bitmaps
-     *
-     * @param backgroundBitmap The original picture
-     * @param emojiBitmap      The chosen emoji
-     * @param face             The detected face
-     * @return The final bitmap, including the emojis over the faces
      */
+
     private static Bitmap addBitmapToFace(Bitmap backgroundBitmap, Bitmap emojiBitmap, Face face) {
 
         // Initialize the results bitmap to be a mutable copy of the original image

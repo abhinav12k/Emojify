@@ -74,11 +74,6 @@ public class MainActivity extends AppCompatActivity {
         mTitleTextView = (TextView) findViewById(R.id.title_text_view);
     }
 
-    /**
-     * OnClick method for "Emojify Me!" Button. Launches the camera app.
-     *
-     * @param view The emojify me button.
-     */
     public void emojifyMe(View view) {
         // Check for the external storage permission
         if (ContextCompat.checkSelfPermission(this,
@@ -114,9 +109,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * Creates a temporary image file and captures a picture to store in it.
-     */
     private void launchCamera() {
 
         // Create the capture image intent
@@ -167,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Method for processing the captured image and setting it to the TextView.
+     * Method for processing the captured image
      */
     private void processAndSetImage() {
 
@@ -190,11 +182,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /**
-     * OnClick method for the save button.
-     *
-     * @param view The save button.
-     */
     public void saveMe(View view) {
         // Delete the temporary image file
         BitmapUtils.deleteImageFile(this, mTempPhotoPath);
@@ -203,11 +190,6 @@ public class MainActivity extends AppCompatActivity {
         BitmapUtils.saveImage(this, mResultsBitmap);
     }
 
-    /**
-     * OnClick method for the share button, saves and shares the new bitmap.
-     *
-     * @param view The share button.
-     */
     public void shareMe(View view) {
         // Delete the temporary image file
         BitmapUtils.deleteImageFile(this, mTempPhotoPath);
@@ -219,11 +201,6 @@ public class MainActivity extends AppCompatActivity {
         BitmapUtils.shareImage(this, mTempPhotoPath);
     }
 
-    /**
-     * OnClick for the clear button, resets the app to original state.
-     *
-     * @param view The clear button.
-     */
     public void clearImage(View view) {
         // Clear the image and toggle the view visibility
         mImageView.setImageResource(0);
